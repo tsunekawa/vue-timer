@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="build/build.css"></style>
+    <style type="text/css">
+      .timer-restTime
+      {
+        color: gray;
+        font-size: 500%;
+        margin:0;
+        padding:0;
+        text-align:center;
+      }
+
+      .timer-btn-group
+      {
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timer">
+      <p class="timer-restTime" v-text="time"></p>
+      <div class="timer-btn-group">
+        <button class="timer-btn-start" v-on="click:start">Start</button>
+        <button class="timer-btn-stop" v-on="click:pose">Pose</button>
+        <button class="timer-btn-reset" v-on="click:reset">Reset</button>
+      </div>
+    </div>
+    <script src="build/build.js"></script>
+    <script>
+      var Vue = require('vue'),
+          TimerComponent = require('vue-timer');
+
+      new TimerComponent({
+        el: "#timer"
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "vue-timer",
+  "main": "src/index.js",
+  "repo": "tsunekawa/vue-timer",
+  "description": "Vue component for countdown timer",
+  "version": "0.0.1",
+  "keywords": ["vue.js"],
+  "dependencies": {
+    "yyx990803/vue": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "src/index.js"
+  ]
+}
